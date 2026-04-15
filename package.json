@@ -1,0 +1,21 @@
+{
+  "name": "@openparachute/cli",
+  "version": "0.1.0",
+  "description": "Unified CLI for the @openparachute family. One command dispatches to parachute-agent, parachute-vault, and any other parachute-* binary on PATH.",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "bin": {
+    "parachute": "./dist/cli.js"
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}
